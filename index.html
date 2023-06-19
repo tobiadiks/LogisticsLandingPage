@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Logistics</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:ital,wght@0,400;0,500;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+
+<body>
+  <nav class="flex justify-between items-center m-4" id="navbar">
+    <div class="navbar-logo">
+      <a href="#home">
+        <h1>Outports.</h1>
+      </a>
+    </div>
+
+    <ul class="navbar-nav " id="navbarNav">
+      <li><a href="#services" onclick="closeNavbar()">Services</a></li>
+      <li><a href="#track-expansion" onclick="closeNavbar()">Track Expansion</a></li>
+      <li><a href="#clients" onclick="closeNavbar()">Clients</a></li>
+      <li><a href="#about" onclick="closeNavbar()">About</a></li>
+      <li><a href="#contact" onclick="closeNavbar()">Contact</a></li>
+    </ul>
+    <div class="navbar-menu flex gap-4">
+      <a href="#faqs">FAQs</a>
+      <a href="#login">Login</a>
+      <div class="menu-icon" onclick="toggleNavbar()">
+        &#9776;
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!----------------------<< Home >>-------------------->
+
+    <div id="home">
+      <div class="home-bgcolor max-h-full bg-[#F7F7EB] flex flex-col justify-center items-center text-center p-8">
+        <h1>Get ready for a wider expansion of your business</h1>
+        <p>Reach more market sectors for powerful business development with the expansion of the best transport
+          service
+        </p>
+      </div>
+      <div class="home-bgimg">
+        <div class="input-container">
+          <input type="text" placeholder="Find you need" class="input-field">
+          <span class="input-icon"></span>
+        </div>
+      </div>
+    </div>
+
+
+    <!----------------------<< Reason >>------------------>
+    <div id="reason">
+      <div class="reason-header">
+        <div class="line animation" data-animation="fadeInTop"></div>
+        <h3 class="animation" data-animation="fadeInRight">Why Outports</h3>
+        <h2 class="animation" data-animation="fadeInLeft">Why should you choose our services, here are the advantages
+          that we offer</h2>
+      </div>
+      <div class="reason-content animation" data-animation="fadeInBottom">
+        <div class="reason-item">
+          <div class="reason-icon">
+            <img src="images/Vector.svg">
+          </div>
+          <h3>More Faster Deliver</h3>
+          <p> Faster delivery means customers get what they want sooner, which can lead to increased satisfaction and loyalty.</p>
+        </div>
+        <div class="reason-item">
+          <div class="reason-icon">
+            <img src="images/Vector-2.svg">
+          </div>
+          <h3>Guaranteed Safety</h3>
+          <p> Rest easy with our guaranteed safety measures, providing utmost protection for your belongings throughout the entire moving process. </p>
+        </div>
+        <div class="reason-item">
+          <div class="reason-icon">
+            <img src="images/Vector-3.svg">
+          </div>
+          <h3>Ease of Access</h3>
+          <p> Experience effortless accessibility with our service, providing convenient solutions and smooth processes for easy and stress-free access to your desired resources.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <!----------------------<< About >>------------------->
+    <div id="about">
+      <div class="about-bgcolor">
+
+        <h3>Our Solid Team</h3>
+        <h2>Our great team of professionals is ready</h2>
+        <p> A group of dedicated professionals who bring expertise, passion, and collaboration to deliver outstanding results for your every need.
+        </p>
+      </div>
+      <div class="carousel mb-8" data-flickity>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+      </div>
+
+      <!-- <div class="about-bgimg"></div> -->
+
+    </div>
+
+    <!----------------------<< Services >>---------------->
+    <div id="services">
+      <div class="services-header">
+        <div class="line animation" data-animation="fadeInTop"></div>
+        <h3 class="animation" data-animation="fadeInRight">What's Included</h3>
+        <h2 class="animation" data-animation="fadeInLeft">The best services we provide</h2>
+      </div>
+      <div class="services-grid animation" data-animation="fadeInBottom">
+        <div class="serv-grid-item">
+          <div class="serv-icon">
+            <img src="images/ph_map-trifold-light.svg">
+          </div>
+          <div class="serv-content">
+            <h3>Local Moving</h3>
+            <p> Reliable local movers offering seamless relocation solutions with careful handling, efficient transport, and personalized attention to ensure a stress-free and smooth moving experience.
+            </p>
+          </div>
+
+        </div>
+        <div class="serv-grid-item">
+          <div class="serv-icon">
+            <img src="images/ph_globe-hemisphere-east-light.svg">
+          </div>
+          <div class="serv-content">
+            <h3>International Moving</h3>
+            <p> Expert international movers facilitating seamless global relocations with comprehensive logistics, secure transportation, and meticulous attention to detail, ensuring a smooth transition to your new destination.
+            </p>
+          </div>
+        </div>
+        <div class="serv-grid-item">
+          <div class="serv-icon">
+            <img src="images/ph_buildings-light.svg">
+          </div>
+          <div class="serv-content">
+            <h3>Corporate Moving</h3>
+            <p> Efficient corporate movers providing tailored relocation solutions for businesses, including smooth office transitions, secure equipment handling, and minimal downtime to ensure uninterrupted productivity.
+            </p>
+          </div>
+
+        </div>
+        <div class="serv-grid-item">
+          <div class="serv-icon">
+            <img src="images/ph_sidebar-light.svg">
+          </div>
+          <div class="serv-content">
+            <h3>Long Distance Moving</h3>
+            <p> Trusted long-distance movers offering seamless relocations across vast distances, with reliable transportation, careful handling, and dedicated support to ensure a stress-free move to your new destination.
+            </p>
+          </div>
+
+        </div>
+        <div class="serv-grid-item">
+          <div class="serv-icon">
+            <img src="images/ph_jeep-light.svg">
+          </div>
+          <div class="serv-content">
+            <h3>Instant Delivery</h3>
+            <p> Experience lightning-fast instant deliveries for urgent shipments with our reliable and efficient service, ensuring your items reach their destination quickly and securely.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="serv-grid-item">
+          <div class="serv-icon">
+            <img src="images/ph_jeep-light.svg">
+          </div>
+          <div class="serv-content">
+            <h3>Direct Delivery</h3>
+            <p> Streamline your delivery process with our long direct delivery services, offering efficient and direct transportation solutions for your items, ensuring timely arrival with minimal handling.
+            </p>
+          </div>
+
+        </div>
+        <div class="serv-grid-item">
+          <div class="serv-icon">
+            <img src="images/ph_chalkboard-teacher-light.svg">
+          </div>
+          <div class="serv-content">
+            <h3>Track Monitoring</h3>
+            <p> Stay informed and in control with our track monitoring services, providing real-time updates and comprehensive tracking to ensure visibility and security throughout the entire delivery process.
+            </p>
+          </div>
+
+        </div>
+        <div class="serv-grid-item">
+          <div class="serv-icon">
+            <img src="images/ph_coins-light.svg">
+          </div>
+          <div class="serv-content">
+            <h3>Easy Payment</h3>
+            <p> Simplify your payment process with our easy payment services, offering convenient and secure payment options that save you time and provide a hassle-free transaction experience.
+            </p>
+          </div>
+
+        </div>
+        <div class="serv-grid-item">
+          <div class="serv-icon">
+            <img src="images/ph_browsers-light.svg" alt="">
+          </div>
+          <div class="serv-content">
+            <h3>Data App Management</h3>
+            <p> Efficiently manage and optimize your data with our comprehensive app management services, ensuring secure storage, seamless integration, and enhanced performance for your business applications.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!----------------------<< Clients >>----------------->
+    <div id="clients">
+      <div class="clients-header">
+        <h3>Our Clients</h3>
+        <h2>What our clients say about our services</h2>
+        <p> Our clients rave about our exceptional service, reliability, and professionalism, leaving positive feedback that speaks volumes about our commitment.</p>
+      </div>
+      <div class="clients-grid">
+        <div class="client-img"></div>
+        <div class="client-content">
+          <div class="quote-icon"><img src="images/ph_quotes-light.svg" /></div>
+          <h3>Always the best choice for international shipping with the best price & quality</h3>
+          <div class="client-details">
+            <h3>Juan Dela Cruz</h3>
+            <p>Philippines</p>
+          </div>
+        </div>
+        <div class="client-img"></div>
+        <div class="client-content">
+          <div class="quote-icon"><img src="images/ph_quotes-light.svg" /></div>
+          <h3>Shipping my products for sale faster and helping my business grow more</h3>
+          <div class="client-details">
+            <h3>Ellen Adarna</h3>
+            <p>Philippines</p>
+          </div>
+        </div>
+        <div class="client-img"></div>
+        <div class="client-content">
+          <div class="quote-icon"><img src="images/ph_quotes-light.svg" /></div>
+          <h3>I've been using this service for 3 years and have always been satisfied with this</h3>
+          <div class="client-details">
+            <h3>Mike Reyes</h3>
+            <p>Philippines</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!----------------------<< Steps >>------------------->
+    <div id="steps">
+      <div class="steps-header">
+        <div class="line animation" data-animation="fadeInTop"></div>
+        <h3 class="animation" data-animation="fadeInRight">How It Works</h3>
+        <h2 class="animation" data-animation="fadeInLeft">Simple and easy with just 3 steps</h2>
+      </div>
+      <div class="steps-container animation" data-animation="fadeInBottom">
+        <div class="step-items">
+          <h1>01</h1>
+          <h3>Get an estimate to plan</h3>
+          <p> Plan your move with confidence. Get an accurate estimate tailored to your needs, helping you make informed decisions and effectively prepare for your relocation. </p>
+        </div>
+
+        <div class="step-items">
+          <h1>02</h1>
+          <h3>Receive ongoing support</h3>
+          <p> Experience continuous support from our dedicated team, ensuring your satisfaction every step of the way, with prompt assistance, timely updates, and reliable guidance throughout your journey.</p>
+        </div>
+
+        <div class="step-items">
+          <h1>03</h1>
+          <h3>Relax while your movers</h3>
+          <p> Sit back and relax while our expert movers handle all the heavy lifting, ensuring a smooth and stress-free moving experience from start to finish. </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <a class="back-to-top right-2.5 bottom-3 fixed p-3 hidden border border-solid border-white bg-[#F7896E] rounded-full shadow-xl hover:border-gray-50 hover:shadow-2xl hover:cursor-pointer "><img src="images/arrow-external-left.svg" alt=""></a>
+
+  <footer>
+    <div class="flex flex-col justify-start gap-8 md:flex-row md:justify-between">
+      <div class="footer-logo text-white">
+        <h1>Outports.</h1>
+      </div>
+      <div class="footer-content">
+        <div class="flex flex-col text-white">
+          <h3>Our Company</h3>
+          <a href="#">Intergration</a>
+          <a href="#">Shipping Track</a>
+          <a href="#">International Package</a>
+          <a href="#">Visualization</a>
+          <a href="#">Export Product</a>
+        </div>
+        <div class="flex flex-col text-white">
+          <h3>By Industry</h3>
+          <a href="#">B2B Saas</a>
+          <a href="#">Marketing Agencies</a>
+          <a href="#">Mobile App</a>
+          <a href="#">E-commerce</a>
+
+        </div>
+        <div class="flex flex-col text-white">
+          <h3>Resource</h3>
+          <a href="#">Guide</a>
+          <a href="#">Blog</a>
+          <a href="#">Customer Stories</a>
+          <a href="#">Help Center</a>
+          <a href="#">Documentation</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-separator"></div>
+    <div class="footer-end">
+      <div class="copy-right">&#169; outports 2023 all rights reserved</div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/ig.svg" alt="ig"></a>
+        <a href="http://www.youtube.com/" target="_blank"><img src="images/yt.svg" alt="yt"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="images/tw.svg" alt="tw"></a>
+
+      </div>
+    </div>
+
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
